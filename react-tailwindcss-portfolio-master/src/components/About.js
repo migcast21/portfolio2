@@ -9,7 +9,7 @@ export default function About() {
             Welcome.
           </h1> 
           <p className="mb-8 leading-relaxed">
-            My name is Miguel Castaneda. Primarily a back-end developer, I build interactive websites that deliver a unique and pleasant experience for the user. My interests lie in solving problems and figuring out how things work. Most recently I've been creating apps with React and Ruby on Rails.
+            My name is Miguel Castaneda. I am a software engineer based out of Los Angeles, CA. I build interactive websites that deliver a unique and pleasant experience for the user. My interests lie in solving problems and figuring out how things work. Most recently I've been creating apps with React and Ruby on Rails.
           </p>
           <div className="flex text-center justify-center">
             <a
