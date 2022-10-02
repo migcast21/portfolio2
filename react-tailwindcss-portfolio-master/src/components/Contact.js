@@ -1,4 +1,6 @@
 import React from "react";
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -11,17 +13,22 @@ export default function Contact() {
         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
       )
       .join("&");
-  }
+  } 
+
+  const form = useRef();
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
+    emailjs.sendForm('service_s9tkpla', 'template_5wbhspe', form.current, 'hatNsdaXDbG-oFqJx')
+    .then((result) => {
+        console.log(result.text);
+        alert("Message sent!");
+    }, (error) => {
+        console.log(error.text);
+        alert(error);
+    });
+
+    e.target.reset();
   }
 
   return (
@@ -60,7 +67,8 @@ export default function Contact() {
           </div>
       </div>
         <form
-          netlify
+          ref = {form}
+          netlify 
           name="contact"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
@@ -72,6 +80,7 @@ export default function Contact() {
               Name
             </label>
             <input
+              required
               type="text"
               id="name"
               name="name"
@@ -84,6 +93,7 @@ export default function Contact() {
               Email
             </label>
             <input
+              required
               type="email"
               id="email"
               name="email"
@@ -98,6 +108,7 @@ export default function Contact() {
               Message
             </label>
             <textarea
+              required
               id="message"
               name="message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
