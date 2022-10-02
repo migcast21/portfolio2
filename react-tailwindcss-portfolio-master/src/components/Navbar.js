@@ -18,7 +18,7 @@ export default function Navbar() {
           </a>
           </nav>
           <nav className="flex flex-wrap items-center text-base justify-center sm:">
-          <a href="www.linkedin.com/in/migcastaneda" className="mr-5 hover:text-white">
+          <a href="https://linkedin.com/in/migcastaneda" className="mr-5 hover:text-white">
             LinkedIn
           </a>
           <a href="https://github.com/migcast21/" className="mr-5 hover:text-white">
