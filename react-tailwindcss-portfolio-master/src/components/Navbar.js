@@ -24,8 +24,13 @@ export default function Navbar() {
           <a href="https://github.com/migcast21/" className="mr-5 hover:text-white">
             GitHub
           </a>
+          <a href="migcast21 resume.pdf" className="mr-5 hover:text-white" download>
+            Download Resume
+          </a>
         </nav>
       </div>
     </header>
   );
 }
+
+<a href="./yourfile.pdf" download>Download CV</a>
