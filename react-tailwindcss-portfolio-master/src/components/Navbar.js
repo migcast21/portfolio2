@@ -17,7 +17,7 @@ export default function Navbar() {
             Contact
           </a>
           </nav>
-          <nav className="flex flex-wrap items-center text-base justify-center">
+          <nav className="flex flex-wrap items-center text-base justify-center sm:">
           <a href="www.linkedin.com/in/migcastaneda" className="mr-5 hover:text-white">
             LinkedIn
           </a>
