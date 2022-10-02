@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
 html {
     font-family: 'Work Sans', sans-serif;
-
 }
 
 .welcome {
