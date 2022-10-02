@@ -1,5 +1,11 @@
-@import "tailwindcss/base";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import "tailwindcss/components";
+html {
+    font-family: 'Montserrat', sans-serif;
+}
 
-@import "tailwindcss/utilities";
+.welcome {
+    font-size: 70px;
+}
