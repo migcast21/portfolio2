@@ -5,18 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
 
 @font-face {
-    font-family: 'WorkSans-ExtraLight';
-    src: local('WorkSans-ExtraLight'),
+    font-family: 'WorkSans';
+    src: local('WorkSans'),
       url('/WorkSans-ExtraLight.ttf') format('truetype');
     font-weight: 200;
 }
 
-.selector {
-    font-family: 'WorkSans-ExtraLight';
-}
-
 html {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'WorkSans';
 }
 
 .welcome {
