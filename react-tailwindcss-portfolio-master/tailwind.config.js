@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
       fontFamily: {
-        worksans: ['Work Sans', 'sans-serif']
+        workssans: ['"Work Sans"', 'sans-serif']
       },
   },
   variants: {
