@@ -1,14 +1,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
       fontFamily: {
-        workssans: ['"Work Sans"', 'sans-serif']
+        'sans': ['Work Sans', 'sans-serif']
       },
+    },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [],
 }

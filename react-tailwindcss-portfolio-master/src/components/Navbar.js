@@ -32,5 +32,3 @@ export default function Navbar() {
     </header>
   );
 }
-
-<a href="./yourfile.pdf" download>Download CV</a>
