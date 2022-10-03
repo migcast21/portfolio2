@@ -56,7 +56,7 @@ export default function Contact() {
                 CA
               </p>
             </div>
-            <div className="sm:w-min px-6 pr-36 mt-4 lg:mt-0 text-xs">
+            <div className="sm:w-min px-6 pr-2 mt-4 lg:mt-0 text-xs">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
