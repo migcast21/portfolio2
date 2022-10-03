@@ -3,7 +3,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+      fontFamily: {
+        workSans: ['Work Sans', 'sans-serif']
+      },
   },
   variants: {
     extend: {},
