@@ -13,7 +13,7 @@ export const projects = [
     description:
       "Tech resale app -- users are able to manage their accounts and list specific items for sale",
     image: "./giphy3.gif",
-    link: "#",
+    link: "https://shrouded-gorge-57239.herokuapp.com/",
   },
   {
     title: "BOS2LAX",
